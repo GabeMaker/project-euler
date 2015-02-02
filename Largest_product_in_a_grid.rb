@@ -27,3 +27,11 @@ str_nums = %w(08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
 
 numbers = str_nums.map {|num| num.to_i }
 grid = numbers.each_slice(20).to_a
+
+# Find products in columns of 4:
+  # For each 'row' array appart from the last three, multiply each number element by the 4 immediately below it
+
+grid_top17 = grid.slice(0,17)
+p grid_top17
+
+# This doesn't work because there are no longer enough rows below the last 3 arrays. Need to rethink
