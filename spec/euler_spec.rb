@@ -16,4 +16,9 @@ describe 'Problem 1' do
   it 'finds all multiples of 5 below a number' do
     expect(multiples_of_five_below(15)).to eq [5,10]
   end
+
+  it 'finds all multiples of 3 and 5 below a number - with no repeats' do
+    expect(multiples_of_both(15)).to eq [3,5,6,9,10,12]
+  end
+
 end

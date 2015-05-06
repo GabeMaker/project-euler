@@ -24,3 +24,10 @@ def multiples_of_five_below number
   end
   result
 end
+
+def multiples_of_both number
+  a = multiples_of_three_below number
+  b = multiples_of_five_below number
+  c = a | b
+  c.sort
+end
