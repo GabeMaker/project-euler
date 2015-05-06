@@ -10,7 +10,10 @@ describe 'Problem 1' do
   end
 
   it 'finds all the multiples of 3 below a number' do
-    expect(multiples_of_three_below(10)).to eq [3,6,9]
+    expect(multiples_of_three_below(15)).to eq [3,6,9,12]
   end
 
+  it 'finds all multiples of 5 below a number' do
+    expect(multiples_of_five_below(15)).to eq [5,10]
+  end
 end

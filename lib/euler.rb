@@ -13,3 +13,14 @@ def multiples_of_three_below number
   end
   result
 end
+
+def multiples_of_five_below number
+  result = []
+  numbers = (0...number).to_a
+  numbers.each do |x|
+    if x % 5 == 0 && x > 0
+      result << x
+    end
+  end
+  result
+end
