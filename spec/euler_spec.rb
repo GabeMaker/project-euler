@@ -8,4 +8,9 @@ describe 'Problem 1' do
   it 'finds the sum of all numbers below a number' do
     expect(sum_below(3)).to eq 3
   end
+
+  it 'finds all the multiples of 3 below a number' do
+    expect(multiples_of_three_below(10)).to eq [3,6,9]
+  end
+
 end
