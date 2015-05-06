@@ -31,3 +31,7 @@ def multiples_of_both number
   c = a | b
   c.sort
 end
+
+def problem1 number
+  multiples_of_both(number).inject :+
+end

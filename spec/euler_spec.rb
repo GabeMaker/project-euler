@@ -21,4 +21,9 @@ describe 'Problem 1' do
     expect(multiples_of_both(15)).to eq [3,5,6,9,10,12]
   end
 
+  it 'finds the sum of all multiples of 3 and 5 below a number' do
+    expect(problem1(10)).to eq 23
+    expect(problem1(1000)).to eq 233168
+  end
+
 end
