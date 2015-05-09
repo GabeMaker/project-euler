@@ -7,7 +7,12 @@
 require 'euler2'
 
 describe 'Problem 2' do
-  it 'can find all the Fibonacci numbers up to 11' do
-    expect(fibs_to(11)).to eq [1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]
+  it 'finds the first number in the sequence' do
+    expect(fibs_to(1)).to eq [1]
   end
+
+it 'finds the first two numbers in the sequence' do
+    expect(fibs_to(2)).to eq [1,2]
+  end
+
 end
