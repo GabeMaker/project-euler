@@ -15,8 +15,12 @@ it 'finds the first two numbers in the sequence' do
     expect(fibs_to(2)).to eq [1, 2]
   end
 
-it 'finds the first two numbers in the sequence' do
+it 'finds the first three numbers in the sequence' do
     expect(fibs_to(3)).to eq [1, 2, 3]
+  end
+
+it 'finds the first four numbers in the sequence' do
+    expect(fibs_to(4)).to eq [1, 2, 3, 5]
   end
 
 end
