@@ -23,4 +23,8 @@ it 'finds the first four numbers in the sequence' do
     expect(fibs_to(4)).to eq [1, 2, 3, 5]
   end
 
+it 'finds the first five numbers in the sequence' do
+    expect(fibs_to(5)).to eq [1, 2, 3, 5, 8]
+  end
+
 end
