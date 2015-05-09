@@ -12,7 +12,11 @@ describe 'Problem 2' do
   end
 
 it 'finds the first two numbers in the sequence' do
-    expect(fibs_to(2)).to eq [1,2]
+    expect(fibs_to(2)).to eq [1, 2]
+  end
+
+it 'finds the first two numbers in the sequence' do
+    expect(fibs_to(3)).to eq [1, 2, 3]
   end
 
 end
