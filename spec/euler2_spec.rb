@@ -27,4 +27,8 @@ it 'finds the first five numbers in the sequence' do
     expect(fibs_to(5)).to eq [1, 2, 3, 5, 8]
   end
 
+it 'finds the terms of the sequence whose values don\'t exceed 10' do
+    expect(fibs_below(10)).to eq [1, 2, 3, 5, 8]
+end
+
 end
