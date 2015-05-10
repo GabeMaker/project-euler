@@ -19,3 +19,7 @@ def sum_evens array
   evens = array.select { |x| x.even? }
   evens.inject :+
 end
+
+def problem2 number
+  sum_evens(fibs_below number)
+end

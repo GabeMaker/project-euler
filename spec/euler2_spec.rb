@@ -41,4 +41,13 @@ describe 'Problem 2' do
     expect(sum_evens([1,2,3,4,5,6])).to eq 12
   end
 
+  it 'can find sum of even numbered terms less than 90' do
+    expect(problem2(90)).to eq 44
+  end
+
+  it 'can find sum of even numbered terms less than 4 million' do
+    expect(problem2(4000000)).to eq 4613732
+  end
+
+
 end
