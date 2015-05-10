@@ -14,3 +14,8 @@ def fibs_below(number)
   end
   fibs_to(x - 1)
 end
+
+def sum_evens array
+  evens = array.select { |x| x.even? }
+  evens.inject :+
+end

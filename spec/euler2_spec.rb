@@ -7,28 +7,38 @@
 require 'euler2'
 
 describe 'Problem 2' do
+
   it 'finds the first number in the sequence' do
     expect(fibs_to(1)).to eq [1]
   end
 
-it 'finds the first two numbers in the sequence' do
+  it 'finds the first two numbers in the sequence' do
     expect(fibs_to(2)).to eq [1, 2]
   end
 
-it 'finds the first three numbers in the sequence' do
+  it 'finds the first three numbers in the sequence' do
     expect(fibs_to(3)).to eq [1, 2, 3]
   end
 
-it 'finds the first four numbers in the sequence' do
+  it 'finds the first four numbers in the sequence' do
     expect(fibs_to(4)).to eq [1, 2, 3, 5]
   end
 
-it 'finds the first five numbers in the sequence' do
+  it 'finds the first five numbers in the sequence' do
     expect(fibs_to(5)).to eq [1, 2, 3, 5, 8]
   end
 
-it 'finds the terms of the sequence whose values don\'t exceed 10' do
+  it 'finds the terms of the sequence whose values don\'t exceed 10' do
     expect(fibs_below(10)).to eq [1, 2, 3, 5, 8]
-end
+  end
+
+  it 'finds the terms of the sequence whose values don\'t exceed 90' do
+    expect(fibs_below(90)).to eq [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+  end
+
+  it 'can add together the even elements in an array' do
+    expect(sum_evens([1,2,3,4])).to eq 6
+    expect(sum_evens([1,2,3,4,5,6])).to eq 12
+  end
 
 end
