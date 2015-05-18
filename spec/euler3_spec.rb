@@ -11,6 +11,10 @@ describe 'Problem 3' do
       expect(2.prime?).to eq true
     end
 
+    it 'can identify 3 is prime' do
+      expect(3.prime?).to eq true
+    end
+
     it 'can identify 4 is not prime' do
       expect(4.prime?).to eq false
     end
