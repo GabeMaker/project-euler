@@ -5,7 +5,14 @@
 require 'euler3'
 
 describe 'Problem 3' do
-  it 'can identify when a number is prime' do
-    expect(2.prime?).to eq true
+  describe 'prime numbers' do
+
+    it 'can identify 2 is prime' do
+      expect(2.prime?).to eq true
+    end
+
+    it 'can identify 4 is not prime' do
+      expect(4.prime?).to eq false
+    end
   end
 end

@@ -1,5 +1,6 @@
 class Fixnum
   def prime?
-    true
+    return true if self == 2
+    false
   end
 end
