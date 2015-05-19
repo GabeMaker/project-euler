@@ -8,7 +8,7 @@ class Fixnum
     true
   end
 
-  def is_factor_of(number)
-    true
+  def factor_of?(number)
+    number % self == 0
   end
 end

@@ -27,7 +27,12 @@ describe 'Problem 3' do
 
   describe 'factors' do
     it 'can identify 2 is a factor of 4' do
-      expect(2.is_factor_of(4)).to be true
+      expect(2.factor_of?(4)).to be true
     end
+
+    it 'can identify 2 not a factor of 5' do
+      expect(2.factor_of?(5)).to be false
+    end
+
   end
 end
