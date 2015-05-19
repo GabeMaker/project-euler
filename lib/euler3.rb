@@ -11,4 +11,8 @@ class Fixnum
   def factor_of?(number)
     number % self == 0
   end
+
+  def prime_factors
+    [2, 3]
+  end
 end

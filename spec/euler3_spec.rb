@@ -33,6 +33,11 @@ describe 'Problem 3' do
     it 'can identify 2 not a factor of 5' do
       expect(2.factor_of?(5)).to be false
     end
+  end
 
+  describe 'prime factors' do
+    it 'can find the prime factors of 6' do
+      expect(6.prime_factors).to eq [2, 3]
+    end
   end
 end
