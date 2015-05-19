@@ -13,6 +13,11 @@ class Fixnum
   end
 
   def prime_factors
-    [2, 3]
+    factors = []
+    numbers = *(2..self - 1)
+    numbers.each do |x|
+      factors << x if self % x == 0
+    end
+    factors
   end
 end

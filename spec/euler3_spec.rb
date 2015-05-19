@@ -39,5 +39,9 @@ describe 'Problem 3' do
     it 'can find the prime factors of 6' do
       expect(6.prime_factors).to eq [2, 3]
     end
+
+    it 'can find the prime factors of 10' do
+      expect(10.prime_factors).to eq [2, 5]
+    end
   end
 end
