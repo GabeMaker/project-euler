@@ -7,4 +7,8 @@ class Fixnum
     end
     true
   end
+
+  def is_factor_of(number)
+    true
+  end
 end

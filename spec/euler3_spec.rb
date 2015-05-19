@@ -24,4 +24,10 @@ describe 'Problem 3' do
       expect(4397.prime?).to eq true
     end
   end
+
+  describe 'factors' do
+    it 'can identify 2 is a factor of 4' do
+      expect(2.is_factor_of(4)).to be true
+    end
+  end
 end
