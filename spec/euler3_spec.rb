@@ -48,12 +48,16 @@ describe 'Problem 3' do
       expect(8.prime_factors).to eq [2, 2, 2]
     end
 
-    it 'can find the prime factors of 13195' do
+    xit 'can find the prime factors of 13195' do
       expect(13195.prime_factors).to eq [5, 7, 13, 29]
     end
 
-    it 'can find the largest prime factor of 13195' do
+    xit 'can find the largest prime factor of 13195' do
       expect(13195.largest_prime_factor).to eq 29
+    end
+
+    xit 'can find the largest prime factor of 13195' do
+      expect(600851475143.largest_prime_factor).to eq 29
     end
   end
 end
