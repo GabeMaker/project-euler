@@ -27,4 +27,8 @@ class Fixnum
     end
     factors
   end
+
+  def largest_prime_factor
+    self.prime_factors.max
+  end
 end
