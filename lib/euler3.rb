@@ -14,9 +14,16 @@ class Fixnum
 
   def prime_factors
     factors = []
-    numbers = *(2..self - 1)
-    numbers.each do |x|
-      factors << x if self % x == 0
+    current = self
+    numbers = *(2..self)
+    (self-1).to_i.times do |i|
+      x = numbers.first
+      if x.prime? == true && current % x == 0
+        factors << x
+        current = current / x
+      else
+        numbers.shift
+      end
     end
     factors
   end
